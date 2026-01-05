@@ -1,9 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-// App.jsx
 import BookList from './BookList';
+import './index.css'; // make sure Tailwind is imported here
 
 function App() {
   const myBooks = [
@@ -25,8 +21,8 @@ function App() {
   ];
 
   return (
-    <div style={{ backgroundColor: '#0a192f', color: 'white', padding: '40px', textAlign: 'center', minHeight: '100vh' }}>
-      <h1>Book List</h1>
+    <div className="bg-gray-900 text-white min-h-screen p-10">
+      <h1 className="text-4xl font-bold text-center mb-8">Book List</h1>
       <BookList books={myBooks} />
     </div>
   );

@@ -1,9 +1,8 @@
-// BookList.jsx
 import BookCard from './BookCard';
 
 function BookList({ books }) {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+    <div className="flex flex-wrap justify-center gap-6">
       {books.map((book, index) => (
         <BookCard 
           key={index} 
